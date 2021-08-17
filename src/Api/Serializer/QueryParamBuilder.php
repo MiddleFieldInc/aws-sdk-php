@@ -105,7 +105,7 @@ class QueryParamBuilder
         }
 
         foreach ($value as $k => $v) {
-            $this->format($items, $v, $prefix . '.' . ($k + 1), $query);
+            $this->format($items, $v, $prefix . '.' . ((int)$k + 1), $query);
         }
     }
 
